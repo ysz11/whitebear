@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello</title>
+</head>
+<body>
+	<form align="center" onsubmit="return handleSubmit()">
+		<p><b>欢迎来到云顶之弈!</b></p>
+		<p>-----恭喜老敏获得以下战绩-----</p>
+		<img src="22.jpg" width="300" height="400">
+		<p>如需进行完整战绩查询，请点击<a href="https://lol.qq.com/app/index.html">敏是大欧皇！</a>，完成相关操作即可查询！</br>
+		请在下面输入框中输入<b>"杨松洲是敏的好兄弟，过年请他吃大餐，不能反悔！"</b>点击确定</p>
+		<input type="text" id="input">
+		<button type="submit" style="margin: 10px;">确定，点快点！！！</button></input> 
+		<button><a href="http://localhost:8080/WhiteBears/ohno.html" style="text-decoration: none">取消</a></button>
+	</form>
+	<script>
+	function handleSubmit() {
+	var inputValue = document.getElementById("input").value;
+	if (inputValue === "杨松洲是敏的好兄弟，过年请他吃大餐，不能反悔！") {
+		window.location.href = "http://localhost:8080/WhiteBears/hhh.html";
+		return false; // 防止表单默认提交行为
+	} else {
+		alert("哎哟，你干嘛！");
+		return false;
+	  }
+	}
+</script>
+
+</body>
+</html>
